@@ -1,0 +1,7 @@
+To start the application just run following command inside a project:
+
+```
+mvn thorntail:run
+```
+
+The server is started on port `8080`.

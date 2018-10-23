@@ -1,0 +1,13 @@
+To start the application just run following command inside a project:
+
+```
+mvn thorntail:run
+```
+
+The server is started on port `8080`.
+
+The generated OpenAPI specification is available at:
+
+```
+http://localhost:8080/openapi
+```

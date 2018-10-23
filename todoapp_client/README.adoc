@@ -1,0 +1,23 @@
+How to generate the client:
+
+```
+java -jar ./openapi-generator-cli-3.3.1.jar generate -i ../OpenAPI-Spec/todoapp.yaml -g java -o out/
+```
+
+Import the project in the `out/` in Eclipse IDE.
+
+Edit `TaskApiTest` class, remove the `@Ignore` annotation and edit the fist test:
+
+```java
+@Test
+public void tasksCreateTest() throws ApiException {
+    Task task = new Task();
+    task.setDescription("Publish slides");
+    task.setCompleted(false);
+    Task response = api.tasksCreate(task);
+
+    System.out.println(response);
+}
+```
+
+Run it.

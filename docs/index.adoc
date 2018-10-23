@@ -1,0 +1,66 @@
+:github-readme: ../README.adoc
+
+include::{github-readme}[tags=vardef]
+
+:projectpage: https://github.com/{gh-repo-owner}/{gh-repo-name}
+
+include::{github-readme}[tags=header]
+
+== URLs
+
+* link:{homepage}[Project home] (this page)
+* link:{projectpage}[GitHub project]
+* link:{talkpage}[Session page] on the EclipseCon website
+* link:{issues}[Issue tracker]
+
+TIP: Do you want to improve this page? Please git-link:self[edit it on GitHub, edit].
+
+include::{github-readme}[tags=description]
+
+=== OpenAPI specification
+
+The git-link:OpenAPI-Spec/[OpenAPI-Spec] folder contains the OpenAPI specification for the Todo-Application.
+
+Open it in Swagger-Editor online:
+
+* link:https://editor.swagger.io/?url=https://raw.githubusercontent.com/jmini/ece2018-openapi/master/OpenAPI-Spec/todoapp.yaml[todoapp.yaml]
+* link:https://editor.swagger.io/?url=https://raw.githubusercontent.com/jmini/ece2018-openapi/master/OpenAPI-Spec/todoapp.v2.yaml[todoapp.v2.yaml]
+
+=== Postman collection
+
+The postman collection can be found here: git-link:Postman/todoapp.postman_collection.json[`Postman/todoapp.postman_collection.json`]
+
+You can get the same result if you import the git-link:OpenAPI-Spec/todoapp.v2.yaml[`todoapp.v2.yaml`] file into Postman.
+
+=== Server implementation
+
+There are 2 server implementation based on Thorntail.
+
+* git-link:todoapp_jaxrs/[todoapp_jaxrs]: JAX-RS only
+* git-link:todoapp/[todoapp]: JAX-RS + OpenAPI Microprofile
+
+To start the application just run following command inside a project:
+
+```
+mvn thorntail:run
+```
+
+The server is started on port `8080`.
+
+If you start version with the OpenAPI support the generated spec is available at:
+
+```
+http://localhost:8080/openapi
+```
+
+=== Client implementation
+
+The OpenAPI-Generator jar is prepared in the git-link:todoapp_client/[todoapp_client] folder.
+
+include::../todoapp_client/README.adoc[]
+
+
+include::{github-readme}[tags=contact-section]
+
+include::{github-readme}[tags=license-section]
+

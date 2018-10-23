@@ -1,0 +1,44 @@
+//tag::vardef[]
+:gh-repo-owner: jmini
+:gh-repo-name: ece2018-openapi
+:project-name: OpenAPIs are everywhere
+:branch: master
+:twitter-handle: j2r2b
+:license: https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html
+:license-name: Eclipse Public License - v 2.0
+
+:git-repository: {gh-repo-owner}/{gh-repo-name}
+:homepage: https://{gh-repo-owner}.github.io/{gh-repo-name}/
+:issues: https://github.com/{git-repository}/issues
+
+:talkname: {project-name}
+:talkpage: https://www.eclipsecon.org/europe2018/sessions/openapis-are-everywhere
+//end::vardef[]
+
+//tag::header[]
+= {project-name}
+Content associated with the talk _link:{talkpage}[{talkname}}]_ given at link:http://eclipsecon.org/europe2018[EclipseCon Europe 2018]
+//end::header[]
+
+//tag::description[]
+== Description
+
+This repository contains the examples and the code demo presented during the talk.
+
+//end::description[]
+Read more on the link:{homepage}[project home page].
+
+//tag::contact-section[]
+== Get in touch
+
+Use the link:{issues}[issue tracker] on GitHub.
+
+You can also contact me on Twitter: link:https://twitter.com/{twitter-handle}[@{twitter-handle}]
+//end::contact-section[]
+
+//tag::license-section[]
+== License
+
+Code is under link:{license}[{license-name}].
+Documentation and slides are under the link:https://creativecommons.org/licenses/by-sa/4.0/[Creative Commons BY-SA 4.0]
+//end::license-section[]
