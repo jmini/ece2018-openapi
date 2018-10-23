@@ -32,6 +32,8 @@ The postman collection can be found here: git-link:Postman/todoapp.postman_colle
 
 You can get the same result if you import the git-link:OpenAPI-Spec/todoapp.v2.yaml[`todoapp.v2.yaml`] file into Postman.
 
+image:postman-import.png[Import feature in Postman]
+
 === Server implementation
 
 There are 2 server implementation based on Thorntail.
@@ -60,7 +62,25 @@ The OpenAPI-Generator jar is prepared in the git-link:todoapp_client/[todoapp_cl
 include::../todoapp_client/README.adoc[]
 
 
+== Talk
+
+=== Abstract
+
+> The OpenAPI Specification (formally known as Swagger) describes APIs in a way that is standardized, machine-readable, and programming language-agnostic. It is an open source project hosted by the Linux Foundation.
+> 
+> There have been many announcements regarding frameworks or tools supporting this standard: For example, Eclipse MicroProfile 1.3 provides a set of annotations that can be used on top of JAX-RS, and version 3.5.2 of Eclipse Vert.x provides automatic requests validation.
+> 
+> The standard is also well-adopted. Many products describe their API as an OpenAPI Specification: Docker, OpenShift, Microsoft Azure, to name a few. The government of Netherlands has adopted the OpenAPI Specification as a national standard.
+> 
+> This talk will provide an overview of the specification format, then it will present some implementation examples with different frameworks. Useful tools; such as an editor based on Eclipse Xtext and a code generator, will also be presented. The examples here are taken from real projects.
+> 
+> All of the tools presented in this talk are open-source.
+
+=== Slides
+
+Slides: link:OpenAPI_are_erverywhere.pdf[OpenAPI_are_erverywhere.pdf]
+
+
 include::{github-readme}[tags=contact-section]
 
 include::{github-readme}[tags=license-section]
-
