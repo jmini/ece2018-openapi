@@ -11,6 +11,7 @@ public class Error {
 
     public static final int CODE_TASK_NOT_FOUND = 1010;
     public static final int CODE_TASK_CAN_NOT_BE_UPDATED = 1020;
+    public static final int CODE_TASK_ID_MISSMATCH_CAN_NOT_BE_UPDATED = 1025;
     public static final int CODE_TASK_CAN_NOT_BE_DELETED = 1030;
 
     @Schema(

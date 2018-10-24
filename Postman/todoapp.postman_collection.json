@@ -44,40 +44,6 @@
 					"response": []
 				},
 				{
-					"name": "Update an existing task",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "http://localhost:8080/todoapp/task",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"todoapp",
-								"task"
-							]
-						},
-						"description": "Update an existing task"
-					},
-					"response": []
-				},
-				{
 					"name": "Create a new task",
 					"request": {
 						"method": "POST",
@@ -149,6 +115,47 @@
 							]
 						},
 						"description": "Get a single task based on its id"
+					},
+					"response": []
+				},
+				{
+					"name": "Update an existing task",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/todoapp/task/:taskId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"todoapp",
+								"task",
+								":taskId"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "{{taskId}}"
+								}
+							]
+						},
+						"description": "Update an existing task"
 					},
 					"response": []
 				},

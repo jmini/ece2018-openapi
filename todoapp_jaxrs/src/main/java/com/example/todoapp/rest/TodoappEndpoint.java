@@ -36,16 +36,24 @@ public class TodoappEndpoint {
     }
 
     @PUT
+    @Path("/{taskId}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response updateTask(Task task) {
-        Optional<Task> result = manager.update(task);
-        if (result.isPresent()) {
-            return Response.ok(result.get())
-                    .build();
+    public Response updateTask(@PathParam("taskId") String taskId, Task task) {
+        if (taskId != null && (task.getId() == null || taskId.equals(task.getId()))) {
+            task.setId(taskId);
+            Optional<Task> result = manager.update(task);
+            if (result.isPresent()) {
+                return Response.ok(result.get())
+                        .build();
+            } else {
+                return Response.status(Status.BAD_REQUEST)
+                        .entity(new Error(Error.CODE_TASK_CAN_NOT_BE_UPDATED, "Could not update task"))
+                        .build();
+            }
         } else {
             return Response.status(Status.BAD_REQUEST)
-                    .entity(new Error(Error.CODE_TASK_CAN_NOT_BE_UPDATED, "Could not update task"))
+                    .entity(new Error(Error.CODE_TASK_ID_MISSMATCH_CAN_NOT_BE_UPDATED, "There is a missmatch between the taskId provided as path parameter and in the request body"))
                     .build();
         }
     }
