@@ -1,0 +1,18 @@
+To start the Open Liberty server you can use this maven command:
+
+```
+mvn install liberty:start-server
+```
+
+The generated OpenAPI specification is available at:
+
+```
+http://localhost:8090/openapi
+```
+
+
+When you are done stop Open Liberty with:
+
+```
+mvn liberty:stop-server
+```
