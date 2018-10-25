@@ -179,11 +179,8 @@ public class TodoappEndpoint {
     @APIResponses(
             value = {
                     @APIResponse(
-                            responseCode = "200",
-                            description = "The updated task",
-                            content = @Content(
-                                    schema = @Schema(
-                                            implementation = Task.class))),
+                            responseCode = "204",
+                            description = "Task deleted response"),
                     @APIResponse(
                             responseCode = "default",
                             description = "Generic error response",
