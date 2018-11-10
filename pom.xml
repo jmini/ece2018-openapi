@@ -65,6 +65,7 @@
                     <backend>html5</backend>
                     <sourceHighlighter>coderay</sourceHighlighter>
                     <attributes>
+                        <imagesdir></imagesdir>
                         <revdate>${build.date}</revdate>
                         <sourcedir>${project.build.sourceDirectory}</sourcedir>
                         <project-version>${project.version}</project-version>
