@@ -13,6 +13,7 @@
 
 :talkname: {project-name}
 :talkpage: https://www.eclipsecon.org/europe2018/sessions/openapis-are-everywhere
+:videopage: https://www.youtube.com/watch?v=-lDot4Yn7Dg
 //end::vardef[]
 
 //tag::header[]
@@ -20,7 +21,7 @@
 :author: Jeremie Bresson
 :revnumber: 2018-10-23
 
-Content associated with the talk _link:{talkpage}[{talkname}]_ given at link:http://eclipsecon.org/europe2018[EclipseCon Europe 2018]
+Content associated with the talk _link:{talkpage}[{talkname}]_ given at link:http://eclipsecon.org/europe2018[EclipseCon Europe 2018] (link:{videopage}[video])
 //end::header[]
 
 //tag::description[]

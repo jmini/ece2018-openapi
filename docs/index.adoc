@@ -80,6 +80,10 @@ include::../todoapp_client/README.adoc[]
 
 Slides: link:OpenAPI_are_erverywhere.pdf[OpenAPI_are_erverywhere.pdf]
 
+=== Video
+
+The presentation was recorded and is availble on YouTube: link:{videopage}[OpenAPIs are everywhere | EclipseCon Europe 2018].
+
 
 include::{github-readme}[tags=contact-section]
 
